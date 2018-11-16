@@ -17,6 +17,7 @@ class SweetSplash : BaseFragment<SweetActivity>() {
                               savedInstanceState: Bundle?): View? {
         displayBack = false
         baseActivity.binding.toolbar.visibility = View.GONE
+        baseActivity.binding.logo.visibility = View.GONE
         binding = FragmentSplashBinding.inflate(inflater, container, false)
         binding.speakers.setOnClickListener {
             startFragmentForResult(baseActivity.factory.fragment(SweetDevCodeKenn::class.java.simpleName))
@@ -37,6 +38,7 @@ abstract class SweetFragment : BaseFragment<SweetActivity>() {
                               savedInstanceState: Bundle?): View? {
         displayBack = true
         baseActivity.binding.toolbar.visibility = View.VISIBLE
+        baseActivity.binding.logo.visibility = View.VISIBLE
         binding = FragmentSweetBinding.inflate(inflater, container, false)
         bind()
         return binding.root

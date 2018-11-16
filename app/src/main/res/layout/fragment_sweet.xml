@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -13,16 +14,7 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:background="@color/colorPrimaryDark"
-            android:scaleType="centerCrop" />
-
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_marginEnd="10dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/logo" />
+            android:scaleType="fitCenter" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,19 +22,15 @@
             android:layout_alignParentBottom="true"
             android:background="@color/colorPrimaryDark"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="@dimen/fab_margin"
-            android:rotation="-3" />
+            android:padding="@dimen/fab_margin" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="75dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorWhite"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="@dimen/fab_margin"
-            android:rotation="3" />
+            android:padding="@dimen/fab_margin" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,25 +39,15 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="@dimen/fab_margin"
-            android:rotation="2" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimaryDark"
-            android:gravity="center"
-            android:orientation="horizontal"
             android:padding="@dimen/fab_margin" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="@dimen/fab_margin">
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/fullName"
